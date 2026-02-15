@@ -7,16 +7,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum BookingStatus {
-  PENDING
-  CONFIRMED
-}
-
-enum PaymentOption {
-  PAYSTACK
-  INVOICE
-}
-
 model Booking {
   id            String        @id @default(cuid())
   name          String
@@ -28,7 +18,5 @@ model Booking {
   details       String
   paymentOption String
   status        String        @default("PENDING")
-  paymentOption PaymentOption
-  status        BookingStatus @default(PENDING)
   createdAt     DateTime      @default(now())
 }
