@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-coolWhite text-midnight antialiased;
+}
+
+.dark body {
+  @apply bg-midnight text-coolWhite;
+}
+
+.gradient-hero {
+  background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.35), transparent 45%);
+}
