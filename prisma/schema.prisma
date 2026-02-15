@@ -26,6 +26,8 @@ model Booking {
   meetingDate   DateTime
   meetingTime   String
   details       String
+  paymentOption String
+  status        String        @default("PENDING")
   paymentOption PaymentOption
   status        BookingStatus @default(PENDING)
   createdAt     DateTime      @default(now())
