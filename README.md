@@ -47,10 +47,9 @@ Home
 
 ## 4) Environment variables
 
-Create `.env.local`:
+Create `.env.local` (optional for SQLite local dev; schema already defaults to `file:./dev.db`):
 
 ```env
-DATABASE_URL="file:./prisma/dev.db"
 PAYSTACK_PUBLIC_KEY="pk_test_xxx"
 PAYSTACK_SECRET_KEY="sk_test_xxx"
 PAYSTACK_BASE_URL="https://checkout.paystack.com"
